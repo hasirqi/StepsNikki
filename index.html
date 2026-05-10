@@ -4,31 +4,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>歩数日記 - StepsNikki</title>
-  <meta name="description" content="歩数日記 / StepsNikki is an iPhone app for recording daily steps, mood, and short diary notes locally on device.">
+  <meta name="description" content="歩数日記 / StepsNikki / 步数日记 records daily steps, mood, and short diary notes locally on iPhone.">
   <style>
-    :root { color-scheme: light; --bg: #fffcf7; --surface: #fff; --text: #182622; --muted: #5f6f68; --green: #2e7d6b; --line: #dfe7e1; }
+    :root {
+      color-scheme: light;
+      --bg: #fffcf7;
+      --surface: #ffffff;
+      --text: #182622;
+      --muted: #5f6f68;
+      --green: #2e7d6b;
+      --line: #dfe7e1;
+    }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; }
-    main, header, footer { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
-    header { padding: 56px 0 28px; }
-    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    main, header, footer {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 56px 0 28px;
+    }
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
     a { color: var(--green); font-weight: 650; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 4.6rem); line-height: 1; letter-spacing: 0; }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 4.6rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
     h2 { margin-top: 0; }
-    .lead { max-width: 700px; color: var(--muted); font-size: 1.12rem; margin: 18px 0 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 24px 0; }
-    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
-    .badge { display: inline-block; color: #fff; background: var(--green); border-radius: 999px; padding: 4px 10px; font-size: 0.86rem; font-weight: 700; margin-bottom: 12px; }
-    footer { color: var(--muted); border-top: 1px solid var(--line); margin-top: 36px; padding: 24px 0 40px; font-size: 0.95rem; }
+    .lead {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.12rem;
+      margin: 18px 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .badge {
+      display: inline-block;
+      color: #fff;
+      background: var(--green);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    footer {
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 36px;
+      padding: 24px 0 40px;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <span class="badge">iPhone App</span>
     <h1>歩数日記</h1>
-    <p class="lead">毎日の歩数、気分、ひとこと日記を端末内でシンプルに記録するためのアプリです。</p>
+    <p class="lead">毎日の歩数、気分、ひとこと日記をシンプルに記録するためのアプリです。Appleヘルスケアから歩数、歩行距離、アクティブエネルギーを読み取り、記録は端末内に保存します。</p>
     <p class="lead">StepsNikki records daily steps, mood, and short diary notes locally on your iPhone.</p>
+    <p class="lead">步数日记会在 iPhone 本机记录每日步数、心情和一句日记。</p>
     <nav aria-label="Primary navigation">
       <a href="./privacy.html">Privacy Policy</a>
       <a href="./support.html">Support</a>
@@ -36,24 +96,36 @@
       <a href="https://github.com/hasirqi/StepsNikki">GitHub</a>
     </nav>
   </header>
+
   <main>
     <section class="grid" aria-label="Features">
       <article class="card">
-        <h2>今日の記録</h2>
-        <p>歩数、距離、消費エネルギー、目標達成率を確認できます。</p>
+        <h2>Daily Steps / 毎日の歩数 / 每日步数</h2>
+        <p>歩数、距離、消費エネルギー、目標達成率を確認できます。Apple Health read access is used only for app functionality.</p>
       </article>
       <article class="card">
-        <h2>Diary and Mood</h2>
-        <p>Save a short note and mood for each day, then review your records later.</p>
+        <h2>Diary and Mood / 日記と気分 / 日记与心情</h2>
+        <p>一日の気づきと気分を短く残し、日別に振り返れます。</p>
       </article>
       <article class="card">
-        <h2>Privacy by Design</h2>
-        <p>No account, ads, analytics SDK, tracking SDK, or external sync is used.</p>
+        <h2>Calendar and Stats / カレンダーと統計 / 日历与统计</h2>
+        <p>カレンダー、週次グラフ、月次グラフで歩数の流れを見られます。</p>
       </article>
     </section>
+
+    <section class="card">
+      <h2>Privacy by Design</h2>
+      <p>StepsNikki はアカウント、広告、分析 SDK、外部同期を使いません。Apple Health データと日記データはアプリ機能のために端末内で扱います。</p>
+    </section>
+
+    <section class="card">
+      <h2>Languages</h2>
+      <p>The app supports Japanese, English, and Simplified Chinese. It follows the system language by default and also lets users change the display language in the app.</p>
+    </section>
   </main>
+
   <footer>
-    <p>© 2026 StepsNikki. Hosted with GitHub Pages.</p>
+    <p>© 2026 StepsNikki. This site is hosted with GitHub Pages.</p>
   </footer>
 </body>
 </html>
